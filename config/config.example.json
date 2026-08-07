@@ -1,0 +1,19 @@
+{
+  "Providers": [
+    {
+      "name": "siliconflow",
+      "api_base_url": "https://api.siliconflow.cn/v1/chat/completions",
+      "api_key": "sk-替换为你的真实KEY",
+      "models": ["deepseek-ai/DeepSeek-V3"],
+      "transformer": {
+        "use": [
+          ["maxtoken", { "max_tokens": 16384 }]
+        ]
+      }
+    }
+  ],
+  "Router": {
+    "default": "siliconflow,deepseek-ai/DeepSeek-V3",
+    "think": "siliconflow,deepseek-ai/DeepSeek-V3"
+  }
+}
